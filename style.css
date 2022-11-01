@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+
+    height: 100vh;
+    display: grid;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 19.2rem;
+
+    max-width: 82.1rem;
+    max-height: 33.6rem;
+}
+
+#stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: -40px;
+
+    max-width: 32.1rem;
+    height: 21.3rem;
+}
+
+#timer{
+    font-size: 12.5rem;
+    font-weight: bold;
+    color: #323238;
+
+    display: flex;
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
+}
+
+#controls button{
+    border: none;
+    background-color: #FFFFFF;
+}
+
+#sons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+#sons button{
+    border: none;
+    border-radius: 24px;
+    background-color: #E1E1E6;
+
+    width: 13.8rem;
+    height: 15.2rem;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+#sons button:hover, button:hover path{
+    background-color: #02799D;
+    fill: #FFFFFF;
+}
+
